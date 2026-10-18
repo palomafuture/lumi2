@@ -1,0 +1,8 @@
+{
+  "name": "Histórias Interativas",
+  "description": "Portal completo de fanfics e histórias interativas em HTML com personalização de personagens, leitor imersivo, estúdio de postagem e exportação estática.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

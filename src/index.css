@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Lora', Georgia, serif;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+    /* Pantone 13-1520 Rose Quartz (Tom fortalecido para máxima legibilidade) */
+    --rose-quartz: #ce5272;
+    --rose-quartz-deep: #9e2847;
+    --rose-quartz-soft: #fdf0f4;
+    --rose-quartz-border: #eca8b8;
+
+    /* Pantone 15-3919 Serenity (Tom fortalecido para presença equilibrada) */
+    --serenity: #486da6;
+    --serenity-deep: #27426e;
+    --serenity-dark: #152238;
+    --serenity-soft: #eef4fb;
+    --serenity-border: #b8cee8;
+
+    /* Preto e Grafite Obsidian Complementares */
+    --noir-obsidian: #0e1015;
+    --noir-charcoal: #181a22;
+    --noir-soft: #222530;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-book {
+  font-family: var(--font-serif);
+}
+
+/* Custom interactive variable highlight style - Rose Quartz + Serenity */
+.interactive-highlight {
+  background-color: rgba(206, 82, 114, 0.14);
+  color: #9e2847;
+  border-bottom: 2px dashed #ce5272;
+  border-radius: 3px;
+  padding: 0 4px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.interactive-highlight:hover {
+  background-color: rgba(206, 82, 114, 0.26);
+  color: #831b34;
+}
+
+/* Reading themes tailored with Rose Quartz, Serenity and Noir */
+.theme-alabaster {
+  background-color: #faf9f6;
+  color: #1e2025;
+}
+
+.theme-sepia {
+  background-color: #f6eedb;
+  color: #382d20;
+}
+
+.theme-rose-quartz {
+  background-color: #fdf3f5;
+  color: #3b1722;
+}
+
+.theme-serenity {
+  background-color: #f0f4fa;
+  color: #162438;
+}
+
+.theme-dark {
+  background-color: #0e1015;
+  color: #e4e7ee;
+}
